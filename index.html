@@ -19,6 +19,12 @@
       transform: translateY(-5px);
       transition: 0.3s;
     }
+    .card i {
+      transition: transform 0.3s;
+    }
+    .card:hover i {
+      transform: scale(1.2);
+    }
     /* Botón flotante de WhatsApp */
     .whatsapp-float {
       position: fixed;
@@ -43,6 +49,35 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+
+  <!-- Los colores del sitio están pensados para ser consistentes: tonos claros en el fondo, acentos en azul (primary), verde (success), rojo (danger), y otros colores Bootstrap para íconos y botones. -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Ezequiel Noble</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Agenda una reunión gratuita</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero -->
   <header class="text-center py-5 bg-dark text-light" id="home">
@@ -63,6 +98,9 @@
             <i class="bi bi-window-stack display-4 text-primary mb-3"></i>
             <h5>Creación de Sitios Web</h5>
             <p>Desarrollo de páginas web modernas, responsivas y optimizadas.</p>
+            <a href="/sitiosweb.html" target="_blank" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver Ejemplos
+            </a>
           </div>
         </div>
 
@@ -71,6 +109,9 @@
             <i class="bi bi-phone display-4 text-success mb-3"></i>
             <h5>Aplicaciones a Medida</h5>
             <p>Aplicaciones interactivas y funcionales que resuelven necesidades reales.</p>
+               <a href="/apps.html" target="_blank" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver Ejemplos
+            </a>
           </div>
         </div>
 
@@ -79,6 +120,9 @@
             <i class="bi bi-palette display-4 text-danger mb-3"></i>
             <h5>Identidad Visual</h5>
             <p>Diseño de logotipos, branding y material gráfico para tu marca.</p>
+               <a href="/branding.html" target="_blank" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver Ejemplos
+            </a>
           </div>
         </div>
 
@@ -97,6 +141,9 @@
             <i class="bi bi-heart-pulse display-4 text-primary"></i>
             <h5 class="mt-3">App Nutricional</h5>
             <p>Calcula peso, estatura y da feedback de calorías y nutrientes.</p>
+               <a href="/404.html" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver aplicación
+            </a>
           </div>
         </div>
 
@@ -105,6 +152,9 @@
             <i class="bi bi-list-check display-4 text-success"></i>
             <h5 class="mt-3">App Hábitos y Metas</h5>
             <p>Organiza rutinas, registra hábitos y da seguimiento de metas personales.</p>
+               <a href="/apps.html" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver aplicación
+            </a>
           </div>
         </div>
 
@@ -113,6 +163,9 @@
             <i class="bi bi-journal-code display-4 text-warning"></i>
             <h5 class="mt-3">Manual Node.js</h5>
             <p>Manual completo de Node.js con ejercicios prácticos y soluciones.</p>
+               <a href="/404.html" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver manual
+            </a>
           </div>
         </div>
 
@@ -122,6 +175,9 @@
             <h5 class="mt-3">Gestión de Productos y Ganancias</h5>
             <p>Administra productos, calcula inversión y ganancias fácilmente.</p>
             <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+               <a href="/apps.html" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver aplicación
+            </a>
           </div>
         </div>
 
@@ -131,6 +187,9 @@
             <h5 class="mt-3">Billetera Digital</h5>
             <p>Registra ingresos y gastos, organiza categorías y visualiza finanzas.</p>
             <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+               <a href="/apps.html" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver aplicación
+            </a>
           </div>
         </div>
 
@@ -140,6 +199,9 @@
             <h5 class="mt-3">Gestión de Clientes y Ventas</h5>
             <p>Control de ventas por cliente y producto con cálculos de ganancias.</p>
             <p><strong>Tecnologías:</strong> HTML, CSS, JavaScript</p>
+               <a href="/apps.html" class="btn btn-outline-primary">
+              <i class="bi bi-eye"></i> Ver aplicación
+            </a>
           </div>
         </div>
 
@@ -148,6 +210,7 @@
   </section>
 
   <!-- Reunión gratuita -->
+ 
   <section id="meeting" class="py-5" data-aos="fade-up">
     <div class="container text-center">
       <h2 class="mb-4">Agenda una reunión gratuita <i class="bi bi-calendar-check"></i></h2>
@@ -157,9 +220,7 @@
         Elegí el día y la hora que más te convenga, ¡y empezamos!
       </p>
       <!-- Calendly -->
-      <a href="https://calendly.com/tu-usuario/reunion-gratuita" target="_blank" class="btn btn-success btn-lg">
-        <i class="bi bi-calendar3"></i> Reservar en Calendly
-      </a>
+      <a href="https://wa.me/59899946914" target="_blank" class="btn btn-success btn-lg">Envíame un mensaje</a>
     </div>
   </section>
 
@@ -170,15 +231,15 @@
       <p class="mb-4">Podés contactarme y ver más de mi trabajo en:</p>
       <div class="d-flex justify-content-center gap-4">
 
-        <a href="https://github.com/tu-usuario" target="_blank" class="text-light fs-2">
+        <a href="https://github.com/Joaquinnoble777" target="_blank" class="text-light fs-2">
           <i class="bi bi-github"></i>
         </a>
 
-        <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" class="text-primary fs-2">
+        <a href="https://www.linkedin.com/in/ezequiel-noble-5156b3354/" target="_blank" class="text-primary fs-2">
           <i class="bi bi-linkedin"></i>
         </a>
 
-        <a href="https://www.instagram.com/tu-usuario" target="_blank" class="text-danger fs-2">
+        <a href="https://www.instagram.com/ezequiellnoble/?__pwa=1" target="_blank" class="text-danger fs-2">
           <i class="bi bi-instagram"></i>
         </a>
 
@@ -187,7 +248,7 @@
   </section>
 
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/+59899946914" class="whatsapp-float" target="_blank">
     <i class="bi bi-whatsapp"></i>
   </a>
 
