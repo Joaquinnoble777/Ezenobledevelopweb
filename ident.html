@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imágenes y diseño gráfico | CodeNoble</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #1a1a1a;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 600px) {
+      .metrics {
+        flex-direction: column;
+        gap: 12px;
+      }
+      .metric-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<section id="portfolioCards" class="container py-5">
+  <h2 class="mb-4 text-center">Imágenes y diseño gráfico</h2>
+  <div class="row g-4 justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809183700.jpg" class="card-img-top" alt="Retoque fotográfico profesional de productos" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Corrección de color, eliminación de imperfecciones y fondos ideales para e-commerce y redes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809183908.jpg" class="card-img-top" alt="Retoque fotográfico profesional de productos" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Mejora y optimización para fotos de productos, con fondo blanco o transparente y recortes perfectos.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809183949.jpg" class="card-img-top" alt="Diseño de logotipo para local de tatuajes" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Identidad fuerte y estilo propio, mezcla de arte clásico y moderno para redes y merch.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809184010.jpg" class="card-img-top" alt="Ilustraciones digitales para buzos" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Diseños exclusivos personalizados para estampar en prendas con alta calidad y estilo único.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809184025.jpg" class="card-img-top" alt="Ilustraciones digitales de vehículos" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Imágenes detalladas y profesionales para presentaciones, promociones y decoración.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809184040.jpg" class="card-img-top" alt="Diseño de empaque para cuenta gotas de Vitamina C" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Packaging moderno, fresco y claro para productos de salud y cuidado personal.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm">
+        <img src="img/ScreenShot Tool -20250809184105.jpg" class="card-img-top" alt="Piezas gráficas para negocio de comida rápida" style="object-fit: cover; max-height: 200px;">
+        <div class="card-body text-center">
+          <p class="card-text" style="font-size: 0.9rem; color: #444;">
+            Material visual atractivo para menús, banners y contenido en redes que refuerzan la marca.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<div class="container text-center my-5">
+   <a href="index.html" class="btn btn-primary">Volver a página principal</a>
+</div>
+</html>
